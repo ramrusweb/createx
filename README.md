@@ -2,4 +2,4 @@
 
 ## Createx Online Courses Platrorm
 
-### [Createx](https://ramrusweb.github.io/createx/ "Visit the Createx Online Platform")
+### [Visit site on GitHub Pages](https://ramrusweb.github.io/createx/ "Visit the Createx Online Platform")
