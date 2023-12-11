@@ -39,7 +39,8 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
+  padding: 20px 0;
+
 }
 
 .header__logo {
@@ -86,7 +87,8 @@ html, body {
   content: "";
   background: url("../assets/images/icons/user-icon.svg") no-repeat;
   position: absolute;
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
   left: 0;
   width: 20px;
   height: 20px;
