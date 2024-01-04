@@ -59,7 +59,7 @@ html, body {
 
 .logo {}
 
-.heading {
+.heading--text--color {
   color: #1e212c;
 }
 
@@ -366,9 +366,34 @@ html, body {
 
 /* ================================ */
 
-.directions {}
+.directions {
+  padding-bottom: 180px;
+}
 
-.directions__inner {}
+.directions__inner {
+  position: relative;
+}
+
+.directions__inner::before {
+  content: "";
+  position: absolute;
+  top: 82px;
+  left: -287px;
+  width: 136px;
+  height: 115px;
+  background: url("./../assets/images/decor/directions/direction-1.svg") 0 0 no-repeat;
+}
+
+.directions__inner::after {
+  content: "";
+  position: absolute;
+  top: 450px;
+  right: -430px;
+  width: 243px;
+  height: 243px;
+  background: url("./../assets/images/decor/directions/direction-2.svg") 0 0 no-repeat;
+  opacity: .12;
+}
 
 .directions__heading {
   margin-bottom: 90px;
@@ -432,6 +457,26 @@ html, body {
 
 .directions_list-item--empty span {
   max-width: 242px;
+}
+
+.directions__list-item--marketing .directions__link-tag {
+  background-color: #03cea4;
+}
+
+.directions__list-item--management .directions__link-tag {
+  background-color: #5a87fc;
+}
+
+.directions__list-item--hr .directions__link-tag {
+  background-color: #f89828;
+}
+
+.directions__list-item--design .directions__link-tag {
+  background-color: #f52f6e;
+}
+
+.directions__list-item--development .directions__link-tag {
+  background-color: #7772f1;
 }
 
 .directions__list-link {
