@@ -711,7 +711,7 @@ html, body {
   bottom: 0;
 }
 
-.team__slider-arrow>svg {
+.team__slider-arrow>svg{
   width: 24px;
   height: 24px;
   transition: all .1s ease-in;
@@ -719,9 +719,13 @@ html, body {
 
 .team__slider-arrow>svg:hover {
   transition: all .2 ease-out;
-  border-radius: 50%;
+  border-radius: 100%;
   background-color: #ff3f3a;
-  box-shadow: 0 0 0 20px #ff3f3a;
+  box-shadow: 0 0 0 12px #ff3f3a;
+}
+
+.team__slider-arrow>svg:active {
+  opacity: .7;
 }
 
 .team__slider-prev {
