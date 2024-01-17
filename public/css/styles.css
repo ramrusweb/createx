@@ -603,7 +603,7 @@ html, body {
 /* ================ TEAM ================ */
 
 .team {
-  background: url("./../assets/images/decor/team/team-bg.svg") 200px 30px no-repeat, #f4f5f7;
+  background: url("./../assets/images/decor/team/team-bg.svg") calc(50% + 140px) calc(50% + 120px) no-repeat, #f4f5f7;
 }
 
 .team__heading {
@@ -734,7 +734,24 @@ html, body {
 
 /* ================ TESTIMONIALS ================ */
 .testimonials {
-  background-color: #f4f5f7;
+  background: #f4f5f7;
+  position: relative;
+}
+
+.testimonials::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-44.9%, -55.4%);
+  background: url("./../assets/images/testi-bg.svg") 0 0 / 100% no-repeat;
+  width: 1971px;
+  height: 816px;
+}
+
+.testimonials-inner {
+  position: relative;
+  z-index: 1;
 }
 
 .testimonials__heading {
