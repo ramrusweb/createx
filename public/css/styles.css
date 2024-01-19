@@ -43,6 +43,10 @@ html, body {
   padding-bottom: 177px;
 }
 
+.main__program {
+  padding: 115px 0 185px;
+}
+
 .button {
   display: inline-block;
   background: linear-gradient(56deg, #ff3f3a 0%, #f75e05 100%);
@@ -102,6 +106,10 @@ html, body {
   font-weight: 900;
   font-size: 46px;
   line-height: 130%;
+}
+
+.style__display-none {
+  display: none;
 }
 
 /* ================ HEADER TOP ================ */
@@ -964,4 +972,70 @@ html, body {
   filter: grayscale(0);
   opacity: 1;
   transition: all .3s;
+}
+
+/* ================ PROGRAM ================ */
+.program__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.program__content {
+  margin-right: 30px;
+  max-width: 600px;
+}
+
+.program__heading {
+  margin-bottom: 60px;
+}
+
+.program__acc-item {
+  margin-bottom: 24px;
+}
+
+.program__acc-link {
+  display: block;
+  padding-left: 40px;
+}
+
+.program__acc-item:last-child {
+  margin-bottom: 0;
+}
+
+.program__acc-head {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+  color: #1e212c;
+  position: relative;
+}
+
+.program__acc-head span {
+  font-weight: 400;
+  color: #ff3f3a;
+}
+
+.program__acc-head::before,
+.program__acc-head::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  width: 18px;
+  height: 2px;
+  background-color: #ff3f3a;
+  border-radius: 2px;
+}
+
+.program__acc-head::after {
+  transform: rotate(90deg);
+  transition: all .3s;
+}
+
+.program__acc-text {
+  margin-top: 16px;
+}
+
+.program__acc-link--active .program__acc-head::after {
+  transform: rotate(0deg);
 }
