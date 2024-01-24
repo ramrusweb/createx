@@ -51,6 +51,10 @@ html, body {
   padding-bottom: 200px;
 }
 
+.main__info {
+  padding-bottom: 180px;
+}
+
 .button {
   display: inline-block;
   background: linear-gradient(56deg, #ff3f3a 0%, #f75e05 100%);
@@ -1213,4 +1217,113 @@ html, body {
 
 .blog__item--article .blog__image-box span::before {
   background: url("./../assets/images/blog/blog-icons/articles.svg") 0 0 / 100% no-repeat;
+}
+
+/* ================ INFO ================ */
+.info__inner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.info__content {
+  margin-right: 30px;
+}
+
+.info__heading {
+  margin-bottom: 40px;
+}
+
+.info__contacts {
+  margin-bottom: 48px;
+}
+
+.info__contacts-item {
+  margin-bottom: 24px;
+  padding-left: 34px;
+}
+
+.info__contacts-item:last-child {
+  margin-bottom: 0;
+}
+
+.info__item-top {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  color: #787a80;
+  position: relative;
+}
+
+.info__item-top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -36px;
+  width: 24px;
+  height: 24px;
+}
+
+.info__item-link {
+  color: #1e212c;
+  font-size: 18px;
+  line-height: 150%;
+  transition: all .3s;
+}
+
+.info__item-link:hover {
+  color: #ff3f3a
+}
+
+.info__mail .info__item-top::before {
+  background: url("./../assets/images/icons/contact-icons/chat.svg") 0 0 / 100% no-repeat;
+}
+
+.info__tel .info__item-top::before {
+  background: url("./../assets/images/icons/contact-icons/iphone.svg") 0 0 / 100% no-repeat;
+}
+
+.info__address .info__item-top::before {
+  background: url("./../assets/images/icons/contact-icons/mark.svg") 0 0 / 100% no-repeat;
+}
+
+.info__item-address {
+  font-size: 18px;
+  line-height: 150%;
+  color: #1e212c;
+}
+
+.info__follow-head {
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.info__socials {
+  display: flex;
+}
+
+.info__socials-item {
+  margin-right: 32px;
+}
+
+.info__socials-item:last-child {
+  margin-right: 0;
+}
+
+.info__socials-link path {
+  transition: all .3s;
+}
+
+.info__socials-link:hover path {
+  transition: all .3s;
+  fill: #1e212c;
+}
+
+.info__map {
+  max-width: 750px;
+  height: 412px;
+  width: 100%;
 }
